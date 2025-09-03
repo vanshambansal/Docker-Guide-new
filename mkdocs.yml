@@ -1,0 +1,16 @@
+site_name: Docker Beginner Guide
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Basics: basics.md
+  - Images: images.md
+  - Containers: containers.md
+  - Dockerfile: dockerfile.md
+  - Docker Compose: compose.md
+  - Volumes: volumes.md
+  - Best Practices: best-practices.md
+  - Fun Examples: fun-examples.md
+  - Advanced: advanced.md
