@@ -81,7 +81,7 @@ docker-guide/
 
 Found an issue or want to improve the guide?
 
-1. **[Create an Issue](https://github.com/vanshambansal/Docker-Guide-new)** - Report bugs or suggest improvements
+1. **[Create an Issue](https://github.com/vanshambansal/Docker-Guide-new/issues)** - Report bugs or suggest improvements
 2. **Fork & PR** - Make changes and submit a pull request
 3. **Test Locally** - Use `mkdocs serve` to verify changes
 
@@ -107,4 +107,4 @@ Begin your Docker journey:
 
 ---
 
-**Made for the Docker community** | [⭐ Star](https://github.com/vanshambansal/Docker-Guide-new) | [🐛 Issues](https://github.com/vanshambansal/Docker-Guide-new/issues) | [🤝 Contribute](#contributing)
+**Made for the Docker community** | [⭐ Star](https://github.com/vanshambansal/Docker-Guide-new) | [🐛 Issues](https://github.com/vanshambansal/Docker-Guide-new/issues)
