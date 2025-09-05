@@ -5,7 +5,7 @@ site_url: https://your-docker-guide.github.io
 
 # Repository info (replace with your actual repo)
 repo_name: docker-beginner-guide
-repo_url: https://github.com/yourusername/docker-beginner-guide
+repo_url: https://github.com/vanshambansal/Docker-Guide-new
 edit_uri: edit/main/docs/
 
 # Copyright
@@ -174,7 +174,7 @@ extra:
   # Social links
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/docker-beginner-guide
+      link: https://github.com/vanshambansal/Docker-Guide-new
       name: Docker Guide on GitHub
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com
