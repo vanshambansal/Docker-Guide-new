@@ -12,22 +12,28 @@
         <meta name="author" content="Docker Learning Team">
       
       
+        <link rel="canonical" href="https://your-docker-guide.github.io/working-with-docker/">
       
       
+        <link rel="prev" href="../core-concepts/dockerfile/">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="compose/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Docker Beginner Guide</title>
+        <title>Working with Docker 🔧 - Docker Beginner Guide</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#working-with-docker" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Docker Beginner Guide" class="md-header__button md-logo" aria-label="Docker Beginner Guide" data-md-component="logo">
+    <a href=".." title="Docker Beginner Guide" class="md-header__button md-logo" aria-label="Docker Beginner Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -103,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Working with Docker 🔧
             
           </span>
         </div>
@@ -215,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -236,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/getting-started/" class="md-tabs__link">
+        <a href="../getting-started/" class="md-tabs__link">
           
   
   
@@ -258,7 +269,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/core-concepts/" class="md-tabs__link">
+        <a href="../core-concepts/" class="md-tabs__link">
           
   
   
@@ -276,11 +287,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/working-with-docker/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -302,7 +315,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/practical-guides/" class="md-tabs__link">
+        <a href="../practical-guides/" class="md-tabs__link">
           
   
   
@@ -324,7 +337,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/advanced/" class="md-tabs__link">
+        <a href="../advanced/" class="md-tabs__link">
           
   
   
@@ -346,7 +359,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/reference/" class="md-tabs__link">
+        <a href="../reference/" class="md-tabs__link">
           
   
   
@@ -390,7 +403,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Docker Beginner Guide" class="md-nav__button md-logo" aria-label="Docker Beginner Guide" data-md-component="logo">
+    <a href=".." title="Docker Beginner Guide" class="md-nav__button md-logo" aria-label="Docker Beginner Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -420,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -473,7 +486,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/getting-started/" class="md-nav__link ">
+            <a href="../getting-started/" class="md-nav__link ">
               
   
   
@@ -508,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/getting-started/installation/" class="md-nav__link">
+      <a href="../getting-started/installation/" class="md-nav__link">
         
   
   
@@ -531,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/getting-started/first-steps/" class="md-nav__link">
+      <a href="../getting-started/first-steps/" class="md-nav__link">
         
   
   
@@ -554,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/getting-started/basics/" class="md-nav__link">
+      <a href="../getting-started/basics/" class="md-nav__link">
         
   
   
@@ -615,7 +628,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/core-concepts/" class="md-nav__link ">
+            <a href="../core-concepts/" class="md-nav__link ">
               
   
   
@@ -650,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core-concepts/images/" class="md-nav__link">
+      <a href="../core-concepts/images/" class="md-nav__link">
         
   
   
@@ -673,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core-concepts/containers/" class="md-nav__link">
+      <a href="../core-concepts/containers/" class="md-nav__link">
         
   
   
@@ -696,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core-concepts/dockerfile/" class="md-nav__link">
+      <a href="../core-concepts/dockerfile/" class="md-nav__link">
         
   
   
@@ -723,6 +736,8 @@
       
   
   
+    
+  
   
   
     
@@ -742,22 +757,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/working-with-docker/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -770,13 +786,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             🔧 Working with Docker
@@ -792,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/working-with-docker/compose/" class="md-nav__link">
+      <a href="compose/" class="md-nav__link">
         
   
   
@@ -815,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/working-with-docker/volumes/" class="md-nav__link">
+      <a href="volumes/" class="md-nav__link">
         
   
   
@@ -838,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/working-with-docker/networks/" class="md-nav__link">
+      <a href="networks/" class="md-nav__link">
         
   
   
@@ -899,7 +915,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/practical-guides/" class="md-nav__link ">
+            <a href="../practical-guides/" class="md-nav__link ">
               
   
   
@@ -934,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/practical-guides/best-practices/" class="md-nav__link">
+      <a href="../practical-guides/best-practices/" class="md-nav__link">
         
   
   
@@ -957,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/practical-guides/fun-examples/" class="md-nav__link">
+      <a href="../practical-guides/fun-examples/" class="md-nav__link">
         
   
   
@@ -980,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/practical-guides/troubleshooting/" class="md-nav__link">
+      <a href="../practical-guides/troubleshooting/" class="md-nav__link">
         
   
   
@@ -1041,7 +1057,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/advanced/" class="md-nav__link ">
+            <a href="../advanced/" class="md-nav__link ">
               
   
   
@@ -1076,7 +1092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/advanced/multi-stage/" class="md-nav__link">
+      <a href="../advanced/multi-stage/" class="md-nav__link">
         
   
   
@@ -1099,7 +1115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/advanced/production/" class="md-nav__link">
+      <a href="../advanced/production/" class="md-nav__link">
         
   
   
@@ -1122,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/advanced/performance/" class="md-nav__link">
+      <a href="../advanced/performance/" class="md-nav__link">
         
   
   
@@ -1183,7 +1199,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/reference/" class="md-nav__link ">
+            <a href="../reference/" class="md-nav__link ">
               
   
   
@@ -1218,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/commands/" class="md-nav__link">
+      <a href="../reference/commands/" class="md-nav__link">
         
   
   
@@ -1241,7 +1257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/glossary/" class="md-nav__link">
+      <a href="../reference/glossary/" class="md-nav__link">
         
   
   
@@ -1264,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/resources/" class="md-nav__link">
+      <a href="../reference/resources/" class="md-nav__link">
         
   
   
@@ -1299,8 +1315,303 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="working-with-docker">Working with Docker 🔧<a class="headerlink" href="#working-with-docker" title="Permanent link">&para;</a></h1>
+<p>Now that you understand the core concepts, it's time to level up! This section covers the essential tools that transform Docker from a simple container runner into a powerful application platform.</p>
+<h2 id="what-youll-master-here">What You'll Master Here<a class="headerlink" href="#what-youll-master-here" title="Permanent link">&para;</a></h2>
+<p>By the end of this section, you'll:</p>
+<ul>
+<li>✅ <strong>Orchestrate multi-container applications</strong> with Docker Compose</li>
+<li>✅ <strong>Persist and share data</strong> using volumes and bind mounts</li>
+<li>✅ <strong>Connect containers securely</strong> with custom networks</li>
+<li>✅ <strong>Build real-world applications</strong> that scale and persist data</li>
+<li>✅ <strong>Manage complex environments</strong> with confidence</li>
+<li>✅ <strong>Debug connectivity issues</strong> between services</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Time Investment</p>
+<p><strong>Total time:</strong> 2.5-3 hours for complete mastery</p>
+<p><strong>Want quick wins?</strong> Start with Compose (1 hour) and come back for volumes and networks later!</p>
+</div>
+<hr />
+<h2 id="your-learning-journey">Your Learning Journey<a class="headerlink" href="#your-learning-journey" title="Permanent link">&para;</a></h2>
+<p>These tools work together to solve real application challenges. Follow <strong>in order</strong> for the best experience:</p>
+<h3 id="1-docker-compose">1. 🎼 <a href="compose/">Docker Compose</a><a class="headerlink" href="#1-docker-compose" title="Permanent link">&para;</a></h3>
+<p><strong>What:</strong> Define and manage multi-container applications with a single YAML file</p>
+<p><strong>Why:</strong> Real applications aren't single containers - they need databases, web servers, APIs, and caches working together seamlessly</p>
+<p><strong>Time:</strong> 60 minutes</p>
+<p><strong>Real-world power:</strong> Replace 10+ docker run commands with one simple <code>docker-compose up</code></p>
+<p><strong>You'll learn:</strong>
+- Write compose files that describe entire application stacks
+- Start complex environments with one command
+- Scale services up and down instantly
+- Manage development vs production configurations
+- Handle service dependencies and startup order</p>
+<p><strong>Game-changer moment:</strong> When you spin up a complete WordPress site with database in 30 seconds!</p>
+<div class="admonition example">
+<p class="admonition-title">Before vs After Compose</p>
+<p><strong>Before:</strong> <code>docker run database &amp;&amp; docker run redis &amp;&amp; docker run web...</code> (error-prone)</p>
+<p><strong>After:</strong> <code>docker-compose up</code> (bulletproof)</p>
+</div>
+<hr />
+<h3 id="2-volumes-storage">2. 💾 <a href="volumes/">Volumes &amp; Storage</a><a class="headerlink" href="#2-volumes-storage" title="Permanent link">&para;</a></h3>
+<p><strong>What:</strong> Persist data beyond container lifetimes and share files between containers</p>
+<p><strong>Why:</strong> Containers are ephemeral by design, but your data needs to survive container restarts, updates, and crashes</p>
+<p><strong>Time:</strong> 45 minutes</p>
+<p><strong>Critical insight:</strong> Without volumes, all your data disappears when containers are removed!</p>
+<p><strong>You'll learn:</strong>
+- Create persistent storage for databases and user files
+- Share code between your computer and containers for development
+- Backup and restore container data safely
+- Choose between bind mounts, named volumes, and tmpfs
+- Share data between multiple containers</p>
+<p><strong>"Aha!" moment:</strong> When you realize you can edit code on your computer and see changes instantly in the container!</p>
+<hr />
+<h3 id="3-networks">3. 🌐 <a href="networks/">Networks</a><a class="headerlink" href="#3-networks" title="Permanent link">&para;</a></h3>
+<p><strong>What:</strong> Control how containers communicate with each other and the outside world</p>
+<p><strong>Why:</strong> Security, isolation, and organized communication between services</p>
+<p><strong>Time:</strong> 45 minutes</p>
+<p><strong>Security benefit:</strong> Isolate sensitive services (databases) from public access while allowing internal communication</p>
+<p><strong>You'll learn:</strong>
+- Create custom networks for different application tiers
+- Isolate groups of containers for security
+- Control which containers can talk to each other
+- Debug network connectivity issues
+- Understand Docker's networking models</p>
+<p><strong>Professional insight:</strong> When you can architect secure, multi-tier applications with proper network isolation!</p>
+<hr />
+<h2 id="why-this-order-matters">Why This Order Matters<a class="headerlink" href="#why-this-order-matters" title="Permanent link">&para;</a></h2>
+<h3 id="the-logical-progression">🎯 <strong>The Logical Progression:</strong><a class="headerlink" href="#the-logical-progression" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Compose First</strong> → See the big picture of multi-container apps</li>
+<li><strong>Volumes Second</strong> → Add data persistence to your applications</li>
+<li><strong>Networks Last</strong> → Fine-tune communication and security</li>
+</ol>
+<h3 id="the-mental-model">🧠 <strong>The Mental Model:</strong><a class="headerlink" href="#the-mental-model" title="Permanent link">&para;</a></h3>
+<p>Think of building a house:
+- <strong>Compose</strong> = The blueprint that shows how all rooms connect
+- <strong>Volumes</strong> = The foundation and storage that persists
+- <strong>Networks</strong> = The electrical and plumbing that connects everything</p>
+<h3 id="the-practical-benefit">⚡ <strong>The Practical Benefit:</strong><a class="headerlink" href="#the-practical-benefit" title="Permanent link">&para;</a></h3>
+<p>By following this order, when you reach Networks, you'll already understand:
+- How multiple containers work together (Compose)
+- Why data needs to persist (Volumes)<br />
+- Common connectivity challenges you need to solve</p>
+<hr />
+<h2 id="real-world-applications">Real-World Applications<a class="headerlink" href="#real-world-applications" title="Permanent link">&para;</a></h2>
+<p><strong>After completing this section, you'll be able to build:</strong></p>
+<h3 id="e-commerce-platform">🏪 <strong>E-commerce Platform</strong><a class="headerlink" href="#e-commerce-platform" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Web frontend (React/Vue)</li>
+<li>API backend (Node.js/Python)</li>
+<li>Database (PostgreSQL)</li>
+<li>Cache layer (Redis)</li>
+<li>All connected securely with persistent data</li>
+</ul>
+<h3 id="analytics-dashboard">📊 <strong>Analytics Dashboard</strong><a class="headerlink" href="#analytics-dashboard" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Data processing containers</li>
+<li>Time-series database</li>
+<li>Visualization frontend</li>
+<li>Shared data volumes</li>
+<li>Isolated networks for security</li>
+</ul>
+<h3 id="development-environment">🚀 <strong>Development Environment</strong><a class="headerlink" href="#development-environment" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Instant project setup for new team members</li>
+<li>Consistent environments across teams</li>
+<li>Hot-reload for rapid development</li>
+<li>Database with test data included</li>
+</ul>
+<hr />
+<h2 id="different-learning-approaches">Different Learning Approaches<a class="headerlink" href="#different-learning-approaches" title="Permanent link">&para;</a></h2>
+<p>Choose what works best for your goals:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Full Stack Developer</label><label for="__tabbed_1_2">DevOps Focused</label><label for="__tabbed_1_3">Quick Learner</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Perfect for you if:</strong> Building web applications with databases and APIs</p>
+<p><strong>Focus Areas:</strong>
+- Docker Compose for development environments
+- Volume mounting for live code reloading
+- Network isolation for security</p>
+<p><strong>Time:</strong> 3 hours (thorough understanding)</p>
+<p><strong>Outcome:</strong> Set up any web app stack in minutes</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Perfect for you if:</strong> Managing infrastructure and deployments</p>
+<p><strong>Focus Areas:</strong>
+- Production-ready Compose configurations
+- Named volumes for data persistence
+- Custom networks for security isolation</p>
+<p><strong>Time:</strong> 2.5 hours (ops-focused learning)</p>
+<p><strong>Outcome:</strong> Deploy and manage complex applications</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Perfect for you if:</strong> Want immediate productivity gains</p>
+<p><strong>Approach:</strong>
+- Start with Compose examples
+- Skip theory, focus on practical commands
+- Come back for volumes/networks when needed</p>
+<p><strong>Time:</strong> 1.5 hours (practical knowledge)</p>
+<p><strong>Outcome:</strong> Use Docker for real projects immediately</p>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="prerequisites-check">Prerequisites Check<a class="headerlink" href="#prerequisites-check" title="Permanent link">&para;</a></h2>
+<p><strong>Before diving in, make sure you have:</strong></p>
+<h3 id="technical-requirements">✅ <strong>Technical Requirements:</strong><a class="headerlink" href="#technical-requirements" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../core-concepts/">Core Concepts</a> completed</li>
+<li>Comfortable with <code>docker run</code>, <code>docker build</code>, and basic commands</li>
+<li>Understanding of images, containers, and Dockerfiles</li>
+</ul>
+<h3 id="conceptual-understanding">🧠 <strong>Conceptual Understanding:</strong><a class="headerlink" href="#conceptual-understanding" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Containers are isolated processes</li>
+<li>Images are templates for containers</li>
+<li>Docker can run multiple containers simultaneously</li>
+</ul>
+<h3 id="helpful-context">💡 <strong>Helpful Context:</strong><a class="headerlink" href="#helpful-context" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Basic understanding of web applications (frontend/backend/database)</li>
+<li>Familiarity with YAML syntax (similar to JSON but with indentation)</li>
+<li>Comfort with command-line file operations</li>
+</ul>
+<hr />
+<h2 id="common-breakthrough-moments">Common Breakthrough Moments<a class="headerlink" href="#common-breakthrough-moments" title="Permanent link">&para;</a></h2>
+<p><strong>Get ready for these game-changing realizations:</strong></p>
+<h3 id="i-can-replace-my-entire-dev-setup-with-one-command">🚀 <strong>"I can replace my entire dev setup with one command!"</strong><a class="headerlink" href="#i-can-replace-my-entire-dev-setup-with-one-command" title="Permanent link">&para;</a></h3>
+<p><em>Usually happens early in the Compose section</em></p>
+<p>When you realize <code>docker-compose up</code> can start your database, API, frontend, and cache instantly - no more "works on my machine" problems.</p>
+<h3 id="my-data-survives-container-updates">💾 <strong>"My data survives container updates!"</strong><a class="headerlink" href="#my-data-survives-container-updates" title="Permanent link">&para;</a></h3>
+<p><em>Usually happens in the Volumes section</em></p>
+<p>The relief when you understand your database won't lose data when you restart containers.</p>
+<h3 id="i-can-control-exactly-which-services-talk-to-each-other">🔒 <strong>"I can control exactly which services talk to each other!"</strong><a class="headerlink" href="#i-can-control-exactly-which-services-talk-to-each-other" title="Permanent link">&para;</a></h3>
+<p><em>Usually happens in the Networks section</em></p>
+<p>When network isolation clicks and you can architect truly secure applications.</p>
+<h3 id="docker-just-became-my-development-superpower">⚡ <strong>"Docker just became my development superpower!"</strong><a class="headerlink" href="#docker-just-became-my-development-superpower" title="Permanent link">&para;</a></h3>
+<p><em>Usually happens by the end</em></p>
+<p>Everything comes together and Docker transforms from "nice to have" to "can't live without."</p>
+<hr />
+<h2 id="what-if-things-go-wrong">What If Things Go Wrong?<a class="headerlink" href="#what-if-things-go-wrong" title="Permanent link">&para;</a></h2>
+<p><strong>Don't panic - these are learning opportunities!</strong></p>
+<h3 id="my-containers-cant-connect-to-each-other">🤔 <strong>"My containers can't connect to each other"</strong><a class="headerlink" href="#my-containers-cant-connect-to-each-other" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Super common!</strong> Check service names in your compose file</li>
+<li>Services connect using service names, not container names</li>
+<li>Make sure both services are on the same network</li>
+</ul>
+<h3 id="i-lost-my-database-data">💽 <strong>"I lost my database data!"</strong><a class="headerlink" href="#i-lost-my-database-data" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>This teaches the importance of volumes!</strong></li>
+<li>Always use named volumes or bind mounts for persistent data</li>
+<li>Test your backup and restore procedures</li>
+</ul>
+<h3 id="port-conflicts-everywhere">🔌 <strong>"Port conflicts everywhere!"</strong><a class="headerlink" href="#port-conflicts-everywhere" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Easy fix!</strong> Change host ports in your compose file</li>
+<li>Use <code>docker-compose ps</code> to see what ports are in use</li>
+<li>Remember: you can map any host port to any container port</li>
+</ul>
+<h3 id="file-permissions-are-weird-in-containers">📁 <strong>"File permissions are weird in containers"</strong><a class="headerlink" href="#file-permissions-are-weird-in-containers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Linux vs Windows/Mac differences</strong></li>
+<li>Learn about user mapping and file ownership</li>
+<li>This is normal - we'll cover solutions</li>
+</ul>
+<hr />
+<h2 id="success-milestones">Success Milestones<a class="headerlink" href="#success-milestones" title="Permanent link">&para;</a></h2>
+<p><strong>Celebrate these wins as you progress:</strong></p>
+<h3 id="after-compose">🎯 <strong>After Compose:</strong><a class="headerlink" href="#after-compose" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can start a multi-service application with one command</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You understand how services communicate by name</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can scale services up and down</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can manage different environments (dev/prod)</li>
+</ul>
+<h3 id="after-volumes">🎯 <strong>After Volumes:</strong><a class="headerlink" href="#after-volumes" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Your data persists when containers restart</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can edit code and see changes instantly in containers</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can backup and restore container data</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You understand the different types of mounts</li>
+</ul>
+<h3 id="after-networks">🎯 <strong>After Networks:</strong><a class="headerlink" href="#after-networks" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can isolate services for security</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can debug connectivity issues between containers</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can design secure multi-tier applications</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You understand Docker's networking models</li>
+</ul>
+<hr />
+<h2 id="real-student-success-stories">Real Student Success Stories<a class="headerlink" href="#real-student-success-stories" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>"I went from taking 30 minutes to set up my dev environment to 30 seconds. Docker Compose changed everything!"</em><br />
+— Sarah, Full Stack Developer</p>
+<p><em>"Finally understood why my database kept losing data. Volumes saved my project!"</em><br />
+— Mike, Backend Developer  </p>
+<p><em>"Networks clicked when I realized I could hide my database from the internet but still let my API connect to it."</em><br />
+— Jessica, DevOps Engineer</p>
+<p><em>"Built my first multi-service application today. Felt like magic seeing it all work together!"</em><br />
+— David, Computer Science Student</p>
+</blockquote>
+<hr />
+<h2 id="ready-to-build-real-applications">Ready to Build Real Applications?<a class="headerlink" href="#ready-to-build-real-applications" title="Permanent link">&para;</a></h2>
+<p>You're about to learn the tools that make Docker indispensable for modern development. These aren't just technical skills - they're productivity multipliers that will change how you build and deploy applications.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p>🎼 <strong>Start with Compose</strong></p>
+<hr />
+<p>Learn to orchestrate multi-container applications effortlessly.</p>
+<p><a class="md-button md-button--primary" href="compose/">Master Docker Compose →</a></p>
+</li>
+<li>
+<p>💾 <strong>Understand Storage</strong></p>
+<hr />
+<p>Know Compose already? Learn data persistence next.</p>
+<p><a class="md-button" href="volumes/">Master Volumes →</a></p>
+</li>
+<li>
+<p>🌐 <strong>Control Networking</strong></p>
+<hr />
+<p>Ready for advanced connectivity and security?</p>
+<p><a class="md-button" href="networks/">Master Networks →</a></p>
+</li>
+<li>
+<p>🔄 <strong>Need a Refresher?</strong></p>
+<hr />
+<p>Review core concepts before diving deeper.</p>
+<p><a class="md-button" href="../core-concepts/">Review Core Concepts →</a></p>
+</li>
+</ul>
+</div>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">You're about to unlock Docker's true power!</p>
+<p>This section transforms Docker from a simple container tool into a complete application platform. You'll go from running single containers to orchestrating entire application ecosystems. The skills you learn here are what separate Docker beginners from Docker professionals!</p>
+</div>
+<p><strong>Let's build something amazing together! 🐳</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1320,6 +1631,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../core-concepts/dockerfile/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dockerfile">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Dockerfile
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="compose/" class="md-footer__link md-footer__link--next" aria-label="Next: Docker Compose">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Docker Compose
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1382,10 +1731,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips", "header.autohide"], "search": "/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips", "header.autohide"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

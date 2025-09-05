@@ -1,16 +1,236 @@
 site_name: Docker Beginner Guide
+site_description: Master Docker from zero to hero with hands-on examples and beginner-friendly explanations
+site_author: Docker Learning Team
+site_url: https://your-docker-guide.github.io
+
+# Repository info (replace with your actual repo)
+repo_name: docker-beginner-guide
+repo_url: https://github.com/yourusername/docker-beginner-guide
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 Docker Beginner Guide
+
+# Theme configuration
 theme:
   name: material
+  # custom_dir: overrides
+  language: en
+  home_url: /
+  site_url: /
+  
+  # Color palette with Docker-themed colors
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
+  # Typography
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+  # Favicon and logo (comment out if files don't exist yet)
+  # favicon: assets/images/docker-logo.png
+  # logo: assets/images/docker-logo.png
+
+  # Navigation and UI features
+  features:
+    # Navigation
+    - navigation.tabs           # Top-level tabs
+    - navigation.tabs.sticky    # Sticky tabs
+    - navigation.sections       # Expand sections in sidebar
+    - navigation.expand         # Expand all subsections
+    - navigation.path           # Show path in page title
+    - navigation.indexes        # Enable section index pages
+    - navigation.top            # Back to top button
+    - navigation.footer         # Previous/next page navigation
+    
+    # Table of contents
+    - toc.follow                # TOC follows scroll
+    - toc.integrate             # TOC integrated in sidebar
+    
+    # Search
+    - search.highlight          # Highlight search terms
+    - search.share              # Share search results
+    - search.suggest            # Search suggestions
+    
+    # Content features
+    - content.code.copy         # Copy code button
+    - content.code.annotate     # Code annotations
+    - content.tabs.link         # Link tabs across pages
+    - content.tooltips          # Tooltips for abbreviations
+    - content.footnote.tooltips # Footnote tooltips
+    
+    # Header
+    - header.autohide          # Auto-hide header on scroll
+
+# Navigation structure - organized for learning progression
 nav:
   - Home: index.md
-  - Installation: installation.md
-  - Basics: basics.md
-  - Images: images.md
-  - Containers: containers.md
-  - Dockerfile: dockerfile.md
-  - Docker Compose: compose.md
-  - Volumes: volumes.md
-  - Best Practices: best-practices.md
-  - Fun Examples: fun-examples.md
-  - Advanced: advanced.md
+  - 🚀 Getting Started:
+      - getting-started/index.md
+      - Installation: getting-started/installation.md
+      - First Steps: getting-started/first-steps.md
+      - Docker Basics: getting-started/basics.md
+  - 📦 Core Concepts:
+      - core-concepts/index.md
+      - Images: core-concepts/images.md
+      - Containers: core-concepts/containers.md
+      - Dockerfile: core-concepts/dockerfile.md
+  - 🔧 Working with Docker:
+      - working-with-docker/index.md
+      - Docker Compose: working-with-docker/compose.md
+      - Volumes & Storage: working-with-docker/volumes.md
+      - Networks: working-with-docker/networks.md
+  - 💡 Practical Guides:
+      - practical-guides/index.md
+      - Best Practices: practical-guides/best-practices.md
+      - Fun Projects: practical-guides/fun-examples.md
+      - Troubleshooting: practical-guides/troubleshooting.md
+  - 🚀 Advanced:
+      - advanced/index.md
+      - Multi-stage Builds: advanced/multi-stage.md
+      - Production Tips: advanced/production.md
+      - Performance: advanced/performance.md
+  - 📚 Reference:
+      - reference/index.md
+      - Command Cheatsheet: reference/commands.md
+      - Glossary: reference/glossary.md
+      - Resources: reference/resources.md
+
+# Markdown extensions for rich content
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      
+  # PyMdown Extensions
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins for enhanced functionality
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  # Comment out plugins that might not be installed
+  # - minify:
+  #     minify_html: true
+  #     minify_css: true
+  #     minify_js: true
+  #     htmlmin_opts:
+  #       remove_comments: true
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: timeago
+  #     enable_git_follow: false
+  # - git-committers:
+  #     repository: yourusername/docker-beginner-guide
+  #     branch: main
+  # - awesome-pages
+
+# Extra configuration
+extra:
+  # Comment out version/mike until needed
+  # version:
+  #   provider: mike
+  #   default: latest
+  
+  # Social links
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/docker-beginner-guide
+      name: Docker Guide on GitHub
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com
+      name: Docker Hub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/docker
+      name: Docker on Twitter
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:your-email@example.com
+      name: Send us feedback
+  
+  # Comment out analytics until you have a real GA4 ID
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
+  #   feedback:
+  #     title: Was this page helpful?
+  #     ratings:
+  #       - icon: material/emoticon-happy-outline
+  #         name: This page was helpful
+  #         data: 1
+  #         note: >-
+  #           Thanks for your feedback! Help us improve by sharing what you learned.
+  #       - icon: material/emoticon-sad-outline
+  #         name: This page could be improved
+  #         data: 0
+  #         note: >-
+  #           Thanks for your feedback! Help us improve by
+  #           <a href="https://github.com/yourusername/docker-beginner-guide/issues" target="_blank" rel="noopener">telling us what we can improve</a>.
+  
+  # Announcement bar
+  announcement: >-
+    🎉 New to Docker? Start with our <a href="/getting-started/">Getting Started</a> guide!
+  
+  # Generator info
+  generator: false
+
+# Comment out CSS/JS until files exist
+# extra_css:
+#   - assets/stylesheets/extra.css
+#   - assets/stylesheets/docker-theme.css
+
+# extra_javascript:
+#   - assets/javascripts/extra.js
+#   - assets/javascripts/docker-interactive.js
+#   - https://polyfill.io/v3/polyfill.min.js?features=es6
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Strict mode for better error handling
+strict: false
+
+# Development server configuration
+dev_addr: '127.0.0.1:8000'
+
+# Build directory
+site_dir: site
+
+# Documentation directory
+docs_dir: docs

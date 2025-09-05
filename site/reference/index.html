@@ -12,22 +12,28 @@
         <meta name="author" content="Docker Learning Team">
       
       
+        <link rel="canonical" href="https://your-docker-guide.github.io/reference/">
       
       
+        <link rel="prev" href="../advanced/performance/">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="commands/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Docker Beginner Guide</title>
+        <title>Docker Reference - Docker Beginner Guide</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#docker-reference" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Docker Beginner Guide" class="md-header__button md-logo" aria-label="Docker Beginner Guide" data-md-component="logo">
+    <a href=".." title="Docker Beginner Guide" class="md-header__button md-logo" aria-label="Docker Beginner Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -103,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Docker Reference
             
           </span>
         </div>
@@ -215,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -236,7 +247,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/getting-started/" class="md-tabs__link">
+        <a href="../getting-started/" class="md-tabs__link">
           
   
   
@@ -258,7 +269,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/core-concepts/" class="md-tabs__link">
+        <a href="../core-concepts/" class="md-tabs__link">
           
   
   
@@ -280,7 +291,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/working-with-docker/" class="md-tabs__link">
+        <a href="../working-with-docker/" class="md-tabs__link">
           
   
   
@@ -302,7 +313,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/practical-guides/" class="md-tabs__link">
+        <a href="../practical-guides/" class="md-tabs__link">
           
   
   
@@ -324,7 +335,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/advanced/" class="md-tabs__link">
+        <a href="../advanced/" class="md-tabs__link">
           
   
   
@@ -342,11 +353,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/reference/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -390,7 +403,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Docker Beginner Guide" class="md-nav__button md-logo" aria-label="Docker Beginner Guide" data-md-component="logo">
+    <a href=".." title="Docker Beginner Guide" class="md-nav__button md-logo" aria-label="Docker Beginner Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -420,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -473,7 +486,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/getting-started/" class="md-nav__link ">
+            <a href="../getting-started/" class="md-nav__link ">
               
   
   
@@ -508,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/getting-started/installation/" class="md-nav__link">
+      <a href="../getting-started/installation/" class="md-nav__link">
         
   
   
@@ -531,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/getting-started/first-steps/" class="md-nav__link">
+      <a href="../getting-started/first-steps/" class="md-nav__link">
         
   
   
@@ -554,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/getting-started/basics/" class="md-nav__link">
+      <a href="../getting-started/basics/" class="md-nav__link">
         
   
   
@@ -615,7 +628,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/core-concepts/" class="md-nav__link ">
+            <a href="../core-concepts/" class="md-nav__link ">
               
   
   
@@ -650,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core-concepts/images/" class="md-nav__link">
+      <a href="../core-concepts/images/" class="md-nav__link">
         
   
   
@@ -673,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core-concepts/containers/" class="md-nav__link">
+      <a href="../core-concepts/containers/" class="md-nav__link">
         
   
   
@@ -696,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/core-concepts/dockerfile/" class="md-nav__link">
+      <a href="../core-concepts/dockerfile/" class="md-nav__link">
         
   
   
@@ -757,7 +770,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/working-with-docker/" class="md-nav__link ">
+            <a href="../working-with-docker/" class="md-nav__link ">
               
   
   
@@ -792,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/working-with-docker/compose/" class="md-nav__link">
+      <a href="../working-with-docker/compose/" class="md-nav__link">
         
   
   
@@ -815,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/working-with-docker/volumes/" class="md-nav__link">
+      <a href="../working-with-docker/volumes/" class="md-nav__link">
         
   
   
@@ -838,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/working-with-docker/networks/" class="md-nav__link">
+      <a href="../working-with-docker/networks/" class="md-nav__link">
         
   
   
@@ -899,7 +912,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/practical-guides/" class="md-nav__link ">
+            <a href="../practical-guides/" class="md-nav__link ">
               
   
   
@@ -934,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/practical-guides/best-practices/" class="md-nav__link">
+      <a href="../practical-guides/best-practices/" class="md-nav__link">
         
   
   
@@ -957,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/practical-guides/fun-examples/" class="md-nav__link">
+      <a href="../practical-guides/fun-examples/" class="md-nav__link">
         
   
   
@@ -980,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/practical-guides/troubleshooting/" class="md-nav__link">
+      <a href="../practical-guides/troubleshooting/" class="md-nav__link">
         
   
   
@@ -1041,7 +1054,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/advanced/" class="md-nav__link ">
+            <a href="../advanced/" class="md-nav__link ">
               
   
   
@@ -1076,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/advanced/multi-stage/" class="md-nav__link">
+      <a href="../advanced/multi-stage/" class="md-nav__link">
         
   
   
@@ -1099,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/advanced/production/" class="md-nav__link">
+      <a href="../advanced/production/" class="md-nav__link">
         
   
   
@@ -1122,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/advanced/performance/" class="md-nav__link">
+      <a href="../advanced/performance/" class="md-nav__link">
         
   
   
@@ -1149,6 +1162,8 @@
       
   
   
+    
+  
   
   
     
@@ -1168,22 +1183,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/reference/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -1196,13 +1212,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_7" id="__nav_7_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             📚 Reference
@@ -1218,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/commands/" class="md-nav__link">
+      <a href="commands/" class="md-nav__link">
         
   
   
@@ -1241,7 +1257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/glossary/" class="md-nav__link">
+      <a href="glossary/" class="md-nav__link">
         
   
   
@@ -1264,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/reference/resources/" class="md-nav__link">
+      <a href="resources/" class="md-nav__link">
         
   
   
@@ -1299,8 +1315,97 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="docker-reference">Docker Reference<a class="headerlink" href="#docker-reference" title="Permanent link">&para;</a></h1>
+<p>Quick access to essential Docker information, commands, and resources. This section serves as your go-to reference while working with Docker in development and production environments.</p>
+<h2 id="whats-in-this-section">What's In This Section<a class="headerlink" href="#whats-in-this-section" title="Permanent link">&para;</a></h2>
+<h3 id="command-cheatsheet"><a href="commands/">Command Cheatsheet</a><a class="headerlink" href="#command-cheatsheet" title="Permanent link">&para;</a></h3>
+<p><strong>Quick reference for essential Docker commands</strong></p>
+<p>Complete list of commonly used Docker commands with practical examples and explanations. Organized by function for easy lookup during development.</p>
+<p><strong>Covers:</strong>
+- Container management commands
+- Image operations
+- Volume and network commands
+- Docker Compose commands
+- Debugging and inspection tools</p>
+<h3 id="glossary"><a href="glossary/">Glossary</a><a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h3>
+<p><strong>Docker terminology explained</strong></p>
+<p>Clear definitions of Docker terms and concepts. Perfect for beginners learning the vocabulary or experienced users who need quick clarification.</p>
+<p><strong>Includes:</strong>
+- Core Docker concepts
+- Container orchestration terms
+- Security and networking terminology
+- Build and deployment vocabulary</p>
+<h3 id="resources"><a href="resources/">Resources</a><a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p><strong>External tools and learning materials</strong></p>
+<p>Curated collection of Docker tools, documentation, tutorials, and community resources to continue your learning journey.</p>
+<p><strong>Features:</strong>
+- Official Docker documentation links
+- Recommended tools and utilities
+- Community resources and forums
+- Advanced learning materials</p>
+<h2 id="how-to-use-this-reference">How to Use This Reference<a class="headerlink" href="#how-to-use-this-reference" title="Permanent link">&para;</a></h2>
+<h3 id="during-development">During Development<a class="headerlink" href="#during-development" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Bookmark the <a href="commands/">Command Cheatsheet</a> for quick command lookup</li>
+<li>Reference the <a href="glossary/">Glossary</a> when encountering unfamiliar terms</li>
+<li>Check <a href="resources/">Resources</a> for tools that can improve your workflow</li>
+</ul>
+<h3 id="while-learning">While Learning<a class="headerlink" href="#while-learning" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use the <a href="glossary/">Glossary</a> to build your Docker vocabulary</li>
+<li>Follow links in <a href="resources/">Resources</a> for deeper learning</li>
+<li>Practice commands from the <a href="commands/">Cheatsheet</a> in your own projects</li>
+</ul>
+<h3 id="in-production">In Production<a class="headerlink" href="#in-production" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Reference production-specific commands in the <a href="commands/">Cheatsheet</a></li>
+<li>Use <a href="resources/">Resources</a> to find monitoring and deployment tools</li>
+<li>Share the <a href="glossary/">Glossary</a> with team members for consistent terminology</li>
+</ul>
+<h2 id="quick-access">Quick Access<a class="headerlink" href="#quick-access" title="Permanent link">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p>📋 <strong>Command Reference</strong></p>
+<hr />
+<p>Essential Docker commands for daily use.</p>
+<p><a class="md-button md-button--primary" href="commands/">View Commands</a></p>
+</li>
+<li>
+<p>📚 <strong>Docker Glossary</strong></p>
+<hr />
+<p>Definitions of key Docker terms and concepts.</p>
+<p><a class="md-button" href="glossary/">Browse Glossary</a></p>
+</li>
+<li>
+<p>🔗 <strong>External Resources</strong></p>
+<hr />
+<p>Tools, documentation, and learning materials.</p>
+<p><a class="md-button" href="resources/">Explore Resources</a></p>
+</li>
+</ul>
+</div>
+<p>This reference section complements the learning material in other sections by providing quick access to the information you need most often when working with Docker.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1320,6 +1425,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../advanced/performance/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Performance">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Performance
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="commands/" class="md-footer__link md-footer__link--next" aria-label="Next: Command Cheatsheet">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Command Cheatsheet
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1382,10 +1525,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips", "header.autohide"], "search": "/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips", "header.autohide"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
